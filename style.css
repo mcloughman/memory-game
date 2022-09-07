@@ -1,0 +1,25 @@
+#game div {
+  border: 1px solid black;
+  width: 15%;
+  height: 200px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.score-div {
+  text-align: center;
+  font-size: 24px;
+  width: 500px;
+  margin: 30px auto;
+  background-color: aqua;
+}
+
+.play-again-btn {
+  display: inline-block;
+  margin-left: 30px;
+  font-size: 30px;
+}
+
+#lowest-score {
+  float: right;
+}
