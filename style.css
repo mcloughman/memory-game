@@ -16,8 +16,10 @@
 
 .play-again-btn {
   display: inline-block;
-  margin-left: 30px;
+  text-decoration: blink;
   font-size: 30px;
+  width: 100%;
+  background-color: coral;
 }
 
 #lowest-score {

@@ -13,7 +13,7 @@ function startGame() {
   const scoreDiv = document.querySelector(".score-div");
   const lowestScoreSpan = document.querySelector("#lowest-score");
   gameContainer.innerHTML = "";
-  scoreSpan.innerHTML = "";
+  scoreSpan.innerHTML = numGuesses;
 
   let lowestScore = JSON.parse(localStorage.getItem("lowestScore")) || "";
   if (lowestScore) {
@@ -82,8 +82,8 @@ function startGame() {
   // we will call this function when user has found all
   const playAgain = () => {
     btn = document.createElement("button");
-    btn.classList.add("play-again-btn", "show");
-    btn.innerText = "Play Again?";
+    btn.classList.add("play-again-btn");
+    btn.innerText = "Click to Play Again";
     scoreDiv.append(btn);
     btn.addEventListener("click", () => {
       btn.remove();
