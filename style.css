@@ -1,9 +1,23 @@
-#game div {
+body {
+  margin: 30px 3em;
+}
+
+#game-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  background-color: skyblue;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#game-container div {
   border: 1px solid black;
-  width: 15%;
   height: 200px;
   margin: 10px;
   display: inline-block;
+  cursor: pointer;
+  background-color: whitesmoke;
+  border-radius: 5px;
 }
 
 .score-div {
@@ -11,7 +25,7 @@
   font-size: 24px;
   width: 500px;
   margin: 30px auto;
-  background-color: aqua;
+  background-color: whitesmoke;
 }
 
 .play-again-btn {
@@ -19,7 +33,11 @@
   text-decoration: blink;
   font-size: 30px;
   width: 100%;
-  background-color: coral;
+  background-color: skyblue;
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
 }
 
 #lowest-score {
