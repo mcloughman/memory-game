@@ -1,5 +1,6 @@
 body {
   margin: 30px 3em;
+  background-color: skyblue;
 }
 
 #game-container {
@@ -12,7 +13,7 @@ body {
 
 #game-container div {
   border: 1px solid black;
-  height: 200px;
+  height: 150px;
   margin: 10px;
   display: inline-block;
   cursor: pointer;
@@ -25,7 +26,6 @@ body {
   font-size: 24px;
   width: 500px;
   margin: 30px auto;
-  background-color: whitesmoke;
 }
 
 .play-again-btn {
@@ -33,7 +33,7 @@ body {
   text-decoration: blink;
   font-size: 30px;
   width: 100%;
-  background-color: skyblue;
+  background-color: dodgerblue;
   cursor: pointer;
   margin: 10px 0;
   padding: 10px;

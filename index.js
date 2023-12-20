@@ -9,9 +9,11 @@ function startGame() {
   let cardsChosen = []
   let matches = []
   let numGuesses = 0
+
   const scoreSpan = document.querySelector("#score-span")
   const scoreDiv = document.querySelector(".score-div")
   const lowestScoreSpan = document.querySelector("#lowest-score")
+  console.log(gameContainer)
   gameContainer.innerHTML = ""
   scoreSpan.innerHTML = numGuesses
 
@@ -27,12 +29,22 @@ function startGame() {
     "orange",
     "purple",
     "navy",
+    "yellow",
+    "magenta",
+    "gray",
+    "peachpuff",
+    "plum",
     "red",
     "blue",
     "green",
     "orange",
     "purple",
     "navy",
+    "yellow",
+    "magenta",
+    "gray",
+    "peachpuff",
+    "plum",
   ]
 
   // here is a helper function to shuffle an array
@@ -138,10 +150,11 @@ function startGame() {
   // TODO: Implement this function!
   function handleCardClick(event) {
     // you can use event.target to see which element was clicked
+    console.log(event.target.value)
     const choice = event.target
-
     const colorDiv = event.target
     choice.style.backgroundColor = colorDiv.className
+
     cardsChosen.push(colorDiv)
 
     if (cardsChosen.length === 2) {
